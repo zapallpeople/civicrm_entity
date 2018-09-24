@@ -709,7 +709,10 @@ final class SupportedEntities {
         break;
     }
 
-    if (!array_key_exists($entity_type, static::getInfo())) {
+    $config = \Drupal::config('civicrm_entity.settings');
+    $enabled_entity_types = $config->get('enabled_entity_types') ?: [];
+
+    if (!array_key_exists($entity_type, static::getInfo()) || !in_array($entity_type, $enabled_entity_types)) {
       return FALSE;
     }
 
