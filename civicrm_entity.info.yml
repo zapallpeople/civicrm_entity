@@ -6,4 +6,3 @@ core: 8.x
 dependencies:
   - civicrm:civicrm
   - drupal:datetime
-  - drupal:options
