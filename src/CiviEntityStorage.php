@@ -86,7 +86,7 @@ class CiviEntityStorage extends SqlContentEntityStorage implements DynamicallyFi
       $container->get('entity_type.manager')
     );
   }
-/
+
   /**
    * Initializes table name variables.
    */
