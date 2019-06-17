@@ -70,7 +70,7 @@ class CiviEntityStorage extends SqlContentEntityStorage implements DynamicallyFi
   public function __construct(EntityTypeInterface $entity_type, Connection $database, EntityFieldManagerInterface $entity_field_manager, CacheBackendInterface $cache, LanguageManagerInterface $language_manager, CiviCrmApiInterface $civicrm_api) {
     parent::__construct($entity_type, $database, $entity_field_manager, $cache, $language_manager);
     $this->civicrmApi = $civicrm_api;
-    $this->configFactory = $config_factory;
+    //$this->configFactory = $config_factory;
   }
 
   /**
